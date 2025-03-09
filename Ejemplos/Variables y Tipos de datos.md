@@ -1,0 +1,129 @@
+
+# Variables y Tipos de datos
+
+## Declaración y Definición de Variables
+### Reglas para declarar variables
+- Solo pueden estar compuestas por:
+    - Letras
+    - Números
+    - Guion bajo _
+- No pueden empezar por número
+- No pueden contener espacios
+- Formatos para nombrar variables:
+    - `snake_case`
+    - `camelCase`
+    - `PascalCase`
+
+#### Ejemplo de declaración de una variable
+```python
+mensaje = "hola " #Se declara la variable mensaje
+print(mensaje + "Pedro") #Puedo imprimir el contenido de la variable mensaje varias veces
+print(mensaje + "Carmen")
+```
+**Salida esperada:**
+```plaintext
+Hola Pedro
+Hola Carmen
+```
+
+#### Ejemplo de modificación del valor de una variable
+```python
+mensaje = "que tal " #Se cambió el valor de la variable mensaje
+print(mensaje + "Juan") #Ahora se imprime algo distinto
+print(mensaje + "Ana")
+```
+**Salida esperada:**
+```plaintext
+que tal Juan
+que tal Ana
+```
+
+#### Ejemplo de declaración de varias variables en una línea
+```python
+mensaje, numero, saludo = "hola", 16, "buenas" #Se definieron todas a la vez
+print(mensaje)
+print(numero)
+print(saludo)
+```
+**Salida esperada:**
+```plaintext
+hola
+16
+buenas
+```
+
+## Tipos de Datos
+En python no es necesario definir que tipo de dato es una variable, pero si se deben diferenciar ya que tienen significados distintos.
+
+Podemos convertir una variable en un tipo a otro tipo (`casting`).
+<table>
+  <tr>
+    <th>Tipo</th>
+    <th>Característica</th>
+    <th>Ejemplo</th>
+    <th>Función para conversión</th>
+  </tr>
+  <tr>
+    <td><code>Booleano</code></td>
+    <td>Solo tiene dos posibilidades</td>
+    <td><code>True, False</code></td>
+    <td><code>bool(valor)</code></td>
+  </tr>
+  <tr>
+    <td><code>String</code></td>
+    <td>Una cadena de texto, Siempre entre “ ” o ‘ ’</td>
+    <td><code>“Hola mundo”</code></td>
+    <td><code>str(valor)</code></td>
+  </tr>
+  <tr>
+    <td><code>Int</code></td>
+    <td>Números enteros</td>
+    <td><code>10, 2347832, -24</code></td>
+    <td><code>int(valor)</code></td>
+  </tr>
+  <tr>
+    <td><code>Float</code></td>
+    <td>Números decimales</td>
+    <td><code>1.5, 94.30, -3.14</code></td>
+    <td><code>float(valor)</code></td>
+  </tr>
+  <tr>
+    <td><code>Listas</code></td>
+    <td>Pueden tener cualquier tipo de dato
+    </td>
+    <td><code>[123, “abc”, 10.2]</code></td>
+    <td><code>list(valor)</code></td>
+  </tr>
+  <tr>
+    <td><code>Tuplas</code></td>
+    <td>No se pueden modificar</td>
+    <td><code>(123, “abc”, 10.2)</code></td>
+    <td><code>tuple(valor)</code></td>
+  </tr>
+  <tr>
+    <td><code>Sets</code></td>
+    <td>No pueden repetir un dato</td>
+    <td><code>{“a”, “b”, 1}</code></td>
+    <td><code>set(valor)</code></td>
+  </tr>
+  <tr>
+    <td><code>Diccionarios</code></td>
+    <td>Su formato es {key:value}</td>
+    <td><code>{“nombre”: “Pedro”, “edad”: 16}</code></td>
+    <td><code>dict(valor)</code></td>
+  </tr>
+</table>
+
+### Función `type()`
+
+Una función que nos da el tipo de dato de una variable
+
+```python
+var = "Hola mundo!"
+tipo = type(var)
+print(tipo)
+```
+**Salida esperada**
+```plaintext
+<class 'str'>
+```
