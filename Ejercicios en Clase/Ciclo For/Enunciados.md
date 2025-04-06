@@ -38,7 +38,8 @@ Dada una lista de palabras y una letra, cuenta cuántas palabras contienen esa l
 
 **Ejemplo:**  
 ```plaintext
-Entrada: ["casa", "carro", "perro", "gato"], "r"  
+Entrada: ["casa", "carro", "perro", "gato"]
+         "r"  
 Salida: 2
 ```
 
@@ -121,7 +122,8 @@ Dada una lista de palabras y una letra, devuelve una lista con las palabras que 
 
 **Ejemplo:**  
 ```plaintext
-Entrada: ["luz", "sol", "coral", "animal"], "l"  
+Entrada: ["luz", "sol", "coral", "animal"]
+         "l"  
 Salida: ["coral", "animal"]
 ```
 
@@ -131,7 +133,8 @@ Dada una lista de palabras y una letra, crea una nueva lista con la cantidad de 
 
 **Ejemplo:**  
 ```plaintext
-Entrada: ["banana", "manzana", "pera"], "a"  
+Entrada: ["banana", "manzana", "pera"]
+         "a"  
 Salida: [3, 3, 1]
 ```
 
@@ -145,17 +148,7 @@ Entrada: ["sol", "gato", "taza", "luz", "elefante"]
 Salida: ["taza", "elefante"]
 ```
 
-### Ejercicio 15: Contar letras vocales en cada palabra (for anidado)  
-
-Dada una lista de palabras, devuelve una lista con la cantidad de vocales que tiene cada una.  
-
-**Ejemplo:**  
-```plaintext
-Entrada: ["hola", "python", "elefante"]  
-Salida: [2, 1, 4]
-```
-
-### Ejercicio 16: Mostrar letras comunes entre pares de palabras (for anidado)  
+### Ejercicio 15: Mostrar letras comunes entre pares de palabras (for anidado)  
 
 Dada una lista de dos palabras, muestra las letras que tienen en común (sin repetir letras).  
 
@@ -165,7 +158,7 @@ Entrada: ["python", "elefante"]
 Salida: ['e', 'n']
 ```
 
-### Ejercicio 17: Contar cuántas palabras contienen al menos una vocal  
+### Ejercicio 16: Contar cuántas palabras contienen al menos una vocal  
 
 Dada una lista de palabras, cuenta cuántas contienen al menos una vocal.  
 
