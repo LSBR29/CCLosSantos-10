@@ -100,7 +100,7 @@ Ingrese una frase: hola mundo casa roja
 
 Palabras que terminan con 'a': 3
 Palabra mas larga: mundo
-Palabra oculta: aaoa
+Palabra oculta: aoaa
 Palabras con exactamente 5 letras: 1
 Palabras invertidas: ['aloh', 'odnum', 'asac', 'ajor']
 ```
