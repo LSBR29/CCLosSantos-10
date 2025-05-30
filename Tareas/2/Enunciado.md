@@ -27,7 +27,11 @@ Ingrese una palabra: 12345
 Error: Solo puede contener letras
 
 Ingrese una palabra: Prueba
+<<<<<<< HEAD
 Número de vocales únicas: 3
+=======
+Número de vocales únicas: 5
+>>>>>>> f545227cb125226caf9de19427f0e28f5b134e02
 Vocales encontradas: {'u', 'e', 'a'}
 ```
 
