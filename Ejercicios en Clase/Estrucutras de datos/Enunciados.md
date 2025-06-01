@@ -1,4 +1,4 @@
-# Ejercicios ciclo `Estructuras de Datos`
+# Ejercicios `Estructuras de Datos`
 ### 1. Sistema de evaluación cruzada entre estudiantes
 Solicita a cada estudiante que califique a otros compañeros con una nota del 1 al 10. Guarda los resultados en un diccionario anidado. Luego:
 - Calcula el promedio recibido por cada estudiante.
