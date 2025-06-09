@@ -62,7 +62,7 @@ persona3 = ["nube", "luna", "sol", "río"]
 Palabras mencionadas por al menos una persona: {'sol', 'luna', 'mar', 'estrella', 'río', 'nube'}
 Palabras que les gustan a todos: {'sol', 'luna'}  
 Palabras solo de la primera persona: {'mar'}  
-``
+```
 
 ### 5. Registro de asistencia con diccionarios y sets
 Dado un diccionario donde las claves son días y los valores son sets con nombres de estudiantes que asistieron ese día.
