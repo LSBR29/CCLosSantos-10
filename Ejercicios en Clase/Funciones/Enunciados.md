@@ -87,10 +87,7 @@ lista = {
 Tienes una tabla de madera larga. Cada vez que la cortas, se parte en 2 pedazos más pequeños. Solo se puede hacer un corte a la vez. ¿Cuántos cortes necesitas para tener n pedazos?
 
 Crea una función recursiva cortes_necesarios(n) que reciba un número entero n ≥ 1, que representa cuántos pedazos de madera se quieren obtener, y retorne cuántos cortes mínimos se necesitan.
-<<<<<<< HEAD
 
-=======
->>>>>>> 0ff0138e4e23dcdbecc374d783e723ea0915e0ad
 **Ejemplo:**
 ```python
 cortes_necesarios(1) → 0  # ya está entera
