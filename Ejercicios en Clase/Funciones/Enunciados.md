@@ -78,3 +78,14 @@ lista = {
 ```
 (Ana, Carlos)
 ```
+
+### 6. Recursión y resolución de un problema
+Tienes una tabla de madera larga. Cada vez que la cortas, se parte en 2 pedazos más pequeños. Solo se puede hacer un corte a la vez. ¿Cuántos cortes necesitas para tener n pedazos?
+
+Crea una función recursiva cortes_necesarios(n) que reciba un número entero n ≥ 1, que representa cuántos pedazos de madera se quieren obtener, y retorne cuántos cortes mínimos se necesitan.
+**Ejemplo:**
+```python
+cortes_necesarios(1) → 0  # ya está entera
+cortes_necesarios(2) → 1  # un corte parte en dos
+cortes_necesarios(4) → 3  # un corte → 2, otro → 3, otro → 4
+```
