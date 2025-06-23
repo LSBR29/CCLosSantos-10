@@ -22,6 +22,8 @@ El número secreto es menor
 
 Ingrese un número: 39
 Número correcto
+
+Tus intentos fueron: [39, 50, 75]
 ```
 
 ---
@@ -39,6 +41,7 @@ El programa debe:
 ```
 1. Votar
 2. Ver Resultados
+3. Salir
 Seleccione una opción: 1
 -- Votación --
 Candidatos: Ana, Carlos, Luis
@@ -46,6 +49,7 @@ Escoja un candidato: Ana
 
 1. Votar
 2. Ver Resultados
+3. Salir
 Seleccione una opción: 1
 Candidatos: Ana, Carlos, Luis
 -- Votación --
@@ -54,11 +58,17 @@ El candidato no es válido
 
 1. Votar
 2. Ver Resultados
+3. Salir
 Seleccione una opción: 2
 -- Resultados --
 Ana: 1
 Carlos: 0
 Luis: 0
+
+1. Votar
+2. Ver Resultados
+3. Salir
+Seleccione una opción: 3
 ```
 
 ---
