@@ -1,0 +1,4 @@
+lapiz,10,0.5
+cuaderno,5,1.2
+borrador,20,0.3
+regla,7,0.8
