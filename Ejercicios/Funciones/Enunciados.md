@@ -94,3 +94,27 @@ cortes_necesarios(1) → 0  # ya está entera
 cortes_necesarios(2) → 1  # un corte parte en dos
 cortes_necesarios(4) → 3  # un corte → 2, otro → 3, otro → 4
 ```
+
+### 7. 
+Se solicita implementar una función recursiva en Python que reciba una cadena de texto y devuelva el número total de vocales que contiene.
+La función debe contar tanto vocales minúsculas como mayúsculas (`a, e, i, o, u, A, E, I, O, U`).
+
+---
+**Restricciones**
+
+- No se permite el uso de ciclos (`for`, `while`).
+- No se permite el uso de métodos como `.count()` ni expresiones regulares.
+- Se debe utilizar exclusivamente recursión y funciones propias
+---
+**Recomendación**
+
+Revisar el primer carácter de la cadena y verificar si es una vocal.
+- En caso afirmativo, se debe sumar uno y llamar nuevamente a la función con el resto de la cadena.
+- Si no es vocal, simplemente se continúa con la llamada recursiva sin incrementar el contador.
+---
+
+**Ejemplo:**
+```
+Ingrese una cadena: Python es util
+Cantidad de vocales: 4
+```
