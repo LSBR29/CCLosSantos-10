@@ -1,4 +1,4 @@
-# Tarea 3
+# Tarea 1
 ## Descripción
 Desarrolle un programa en Python que permita gestionar un archivo llamado `logs.txt`.
 Cada línea del archivo representa un evento del sistema con la siguiente estructura:
