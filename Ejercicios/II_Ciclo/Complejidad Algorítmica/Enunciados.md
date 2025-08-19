@@ -12,6 +12,7 @@ def f1(lista):
     return total
 ```
 
+
 ```python
 def f2(lista):
     total = 0
@@ -46,7 +47,9 @@ def esPerfecto(n):
         if n % i == 0:
             s += i + n // i
         i += 1
+        i += 1
         if i * i == n:
+            s += i
             s += i
     return s == n
 ```
@@ -60,6 +63,7 @@ Este código solo recorre divisores hasta la raíz cuadrada de `n`. Cada vez que
 ---
 
 ### 3.
+Determine la complejidad temporal y espacial del siguiente algortimo:
 Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
 def suma_elementos(lista):
@@ -78,6 +82,8 @@ En cuanto a espacio, solo usa la variable `total` sin estructuras adicionales, a
 
 ---
 
+### 4.
+Determine la complejidad temporal y espacial del siguiente algortimo:
 ### 4.
 Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
@@ -99,6 +105,8 @@ Además, se crea una nueva matriz `C` del mismo tamaño que A y B, ocupando O(n�
 
 ---
 
+### 5.
+Determine la complejidad temporal y espacial del siguiente algortimo:
 ### 5.
 Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
