@@ -1,6 +1,8 @@
 # Ejercicios `Complejidad Algorítmica`
-### 1. 
-Se tienen las siguientes funciones que realizan cálculos distintos:
+### 1.
+Se tienen las siguientes funciones que realizan cálculos distintos.
+
+Determine la complejidad temporal de ambos algoritmos.
 ```python
 def f1(lista):
     total = 0
@@ -9,6 +11,7 @@ def f1(lista):
             total += lista[i] * lista[j]
     return total
 ```
+
 ```python
 def f2(lista):
     total = 0
@@ -19,40 +22,22 @@ def f2(lista):
     return total
 ```
 
-La complejidad temporal de las funciones `f1` y `f2` son, respectivamente:
+**Respuesta:**
+* `f1` → O(n²)
+* `f2` → O(n³)
 
-**A. *O*($n^2$) y *O*($n^3$)**
+**Explicación:**
 
-B. *O*($n^3$) y *O*($n^{2/3}$)
+En `f1`, el bucle externo recorre `n` veces y el interno recorre `n/3 ≈ n` veces, por lo que en total se hacen `n × n = n²` operaciones.
 
-C. *O*($n^3$) y *O*($n^{3/2}$)  
-
-D. *O*($n^2$) y *O*($n^6$)  
-
-E. *O*($n^6$) y *O*($n^2$)
+En `f2`, hay tres bucles anidados: `n × (n/3) × (n/2) ≈ n³`. Por lo tanto, las complejidades son O(n²) y O(n³).
 
 ---
 
 ### 2.
-Un número perfecto es aquel cuya suma de sus factores propios es igual al
-número. Por ejemplo, el número 6 es perfecto, pues sus factores propios
-(menores que el número) son: 1, 2, 3 y 1 + 2 + 3 = 6. Otro número perfecto es
-28, donde sus factores propios son 1, 2, 4, 7, 14 y 1 + 2 + 4 + 7 + 14 = 28.
+Un número perfecto es aquel cuya suma de sus factores propios es igual al número. Ejemplo: 6 (1 + 2 + 3 = 6) y 28 (1 + 2 + 4 + 7 + 14 = 28).
 
-¿Cuál de los siguientes códigos determina, en el menor número de pasos, si
-un número es perfecto?
-
-A. 
-```python
-def esPerfecto(n):
-    s = 0
-    for i in range(1, n):
-        if s % i == 0:
-            s += i
-        return s == n
-```
-
-**B.**
+Determine la complejidad temporal del siguiente algortimo:
 ```python
 def esPerfecto(n):
     s = 1
@@ -60,25 +45,22 @@ def esPerfecto(n):
     while i * i < n:
         if n % i == 0:
             s += i + n // i
-            i+=1
+        i += 1
         if i * i == n:
-            s+=i
+            s += i
     return s == n
 ```
 
-C. 
-```python
-def esPerfecto(n):
-    s = 0
-    for i in range(1, n // 2 + 1):
-        if s % i == 0:
-            s += i
-    return s < n
-```
+**Respuesta:** O(√n)
+
+**Explicación:**
+
+Este código solo recorre divisores hasta la raíz cuadrada de `n`. Cada vez que encuentra un divisor, añade también el cociente `n//i`. De esta forma evita recorrer hasta `n/2` o `n`, lo que sería mucho más costoso.
+
+---
 
 ### 3.
-Analiza el siguiente código y determina la complejidad temporal y espacial en el peor caso, respectivamente:
-
+Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
 def suma_elementos(lista):
     total = 0
@@ -86,19 +68,18 @@ def suma_elementos(lista):
         total += x
     return total
 ```
-A. O($n$) y O($1$)
 
-B. O($n^2$) y O($1$)
+**Respuesta:** Temporal O(n), Espacial O(1)
 
-**C. O($n$) y O($n$)**
+**Explicación:**
 
-D. O($1$) y O($1$)
+El bucle recorre toda la lista, por lo que tarda O(n).
+En cuanto a espacio, solo usa la variable `total` sin estructuras adicionales, así que es O(1). El espacio ocupado por la lista no cuenta, pues es entrada (parámetro de la función) y no ocupa memoria extra generada por el algoritmo.
 
-E. O($n^2$) y O($n$)
+---
 
-### 4. 
-Analiza el siguiente código y determina la complejidad temporal y espacial en el peor caso:
-
+### 4.
+Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
 def suma_matrices(A, B):
     filas = len(A)
@@ -109,19 +90,17 @@ def suma_matrices(A, B):
             C[i][j] = A[i][j] + B[i][j]
     return C
 ```
-**A. O($n^2$) y O($n^2$)**
+**Respuesta:** Temporal O(n²), Espacial O(n²)
 
-B. O($n^2$) y O($1$)
+**Explicación:**
 
-C. O($n$) y O($n^2$)
+La matriz tiene tamaño `n × n`. Los dos bucles recorren todos sus elementos → O(n²).
+Además, se crea una nueva matriz `C` del mismo tamaño que A y B, ocupando O(n²) memoria adicional.
 
-D. O($n^3$) y O($n^2$)
+---
 
-E. O($n^3$) y O($n^3$)
-
-### 5. 
-Analiza el siguiente código y determina la complejidad temporal y espacial en el peor caso:
-
+### 5.
+Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
 def buscar_en_matriz(matriz, objetivo):
     for fila in matriz:
@@ -129,14 +108,82 @@ def buscar_en_matriz(matriz, objetivo):
             return True
     return False
 ```
-Supón que la matriz es de tamaño $n \times n$.
+Se puede suponer que la matriz es de tamaño `n × n`.
 
-A. O($n$) y O($1$)
+**Respuesta:** Temporal O(n²), Espacial O(1)
 
-**B. O($n^2$) y O($1$)**
+**Explicación:**
 
-C. O($n \log n$) y O($1$)
+El peor caso es cuando el `objetivo` no está en la matriz, por lo que se revisan todas las filas. La operación `if objetivo in fila` cuesta O(n), y hay `n` filas → O(n²).
+En cuanto a memoria, no se crean estructuras adicionales; se usan los parámetros pasados a la función → O(1).
 
-D. O($n^2$) y O($n$)
+---
 
-E. O($n \log n$) y O($n$)
+### 6.
+Determine la complejidad espacial del siguiente algortimo:
+```python
+def suma_lista(lista):
+    total = 0
+    for elemento in lista:
+        total += elemento
+    return total
+```
+
+**Respuesta:** O(1)
+
+**Explicación:**
+
+El algoritmo solo usa una variable `total` (constante en memoria), sin importar el tamaño de la lista. La lista ya está dada como entrada, por lo tanto no cuenta como espacio adicional.
+
+---
+
+### 7.
+Determine la complejidad espacial del siguiente algortimo:
+```python
+def cuadrados(n):
+    resultado = []
+    for i in range(n):
+        resultado.append(i*i)
+    return resultado
+```
+
+**Respuesta:** O(n)
+
+**Explicación:**
+
+La lista `resultado` crece proporcionalmente a `n`, almacenando `n` valores.
+
+---
+
+### 8.
+Determine la complejidad espacial del siguiente algortimo:
+```python
+def duplicados(lista):
+    conjunto = set()
+    for elemento in lista:
+        if elemento in conjunto:
+            return True
+        conjunto.add(elemento)
+    return False
+```
+
+**Respuesta:** O(n)
+
+**Explicación:**
+
+El conjunto `conjunto` puede llegar a almacenar todos los elementos de la lista en el peor caso (cuando no hay duplicados). Por eso, la memoria usada es proporcional al tamaño de la lista.
+
+---
+
+### 9.
+Determine la complejidad espacial del siguiente algortimo:
+```python
+def constante(n):
+    return n*n + 100
+```
+
+**Respuesta:** O(1)
+
+**Explicación:**
+
+Sin importar el valor de `n`, no se crean nuevas variables que ocupen un espacio. La complejidad espacial es constante.
