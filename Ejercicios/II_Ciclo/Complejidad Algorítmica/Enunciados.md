@@ -12,7 +12,6 @@ def f1(lista):
     return total
 ```
 
-
 ```python
 def f2(lista):
     total = 0
@@ -64,7 +63,6 @@ Este código solo recorre divisores hasta la raíz cuadrada de `n`. Cada vez que
 
 ### 3.
 Determine la complejidad temporal y espacial del siguiente algortimo:
-Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
 def suma_elementos(lista):
     total = 0
@@ -82,8 +80,6 @@ En cuanto a espacio, solo usa la variable `total` sin estructuras adicionales, a
 
 ---
 
-### 4.
-Determine la complejidad temporal y espacial del siguiente algortimo:
 ### 4.
 Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
@@ -105,8 +101,6 @@ Además, se crea una nueva matriz `C` del mismo tamaño que A y B, ocupando O(n�
 
 ---
 
-### 5.
-Determine la complejidad temporal y espacial del siguiente algortimo:
 ### 5.
 Determine la complejidad temporal y espacial del siguiente algortimo:
 ```python
