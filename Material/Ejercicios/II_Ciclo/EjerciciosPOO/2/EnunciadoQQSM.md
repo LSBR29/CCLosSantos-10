@@ -14,7 +14,7 @@ Representa una pregunta con sus opciones y respuesta correcta.
 * `dificultad` (int): número de nivel (1 a 15).
 * `texto` (str): enunciado de la pregunta.
 * `opciones` (list): contiene las cuatro opciones de respuesta.
-* `respuesta_correcta` (str): letra (A–D) de la respuesta correcta.
+* `__respuesta_correcta` (str): letra (A–D) de la respuesta correcta.
 
 **Métodos:**
 
@@ -22,6 +22,7 @@ Representa una pregunta con sus opciones y respuesta correcta.
 * `mostrar_pregunta(self)`: muestra el número de nivel, el texto y las opciones con sus letras.
 * `verificar_respuesta(self, respuesta_usuario)`: devuelve `True` si la respuesta coincide con la correcta.
 
+**Debe incluir un getter y setter para el atributo de __respuesta_correcta, que valide si se está ingresando A, B, C o D, en caso contrario resulta en ValueError**
 ---
 
 ### 2. Mixin `Comodin5050Mixin`
