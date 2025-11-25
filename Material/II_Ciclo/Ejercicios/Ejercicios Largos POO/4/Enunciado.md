@@ -1,5 +1,5 @@
 # Ejercicio POO
-## Carrera de Criaturas
+## Carrera
 
 ---
 
