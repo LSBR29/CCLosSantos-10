@@ -1,6 +1,0 @@
-Pan,500
-Leche,800
-Arroz,900
-Huevos,1500
-Queso,2500
-Mantequilla,1800
