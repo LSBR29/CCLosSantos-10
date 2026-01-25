@@ -1,0 +1,10 @@
+#Material no visto
+ii_ciclo/*
+
+i_ciclo/exámenes
+i_ciclo/tareas
+i_ciclo/ejercicios
+i_ciclo/material/*
+
+#Visibles
+!i_ciclo/material/02. variables y tipos de datos.md
