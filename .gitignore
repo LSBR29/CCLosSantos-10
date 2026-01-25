@@ -9,3 +9,4 @@ i_ciclo/material/*
 # Visibles
 !i_ciclo/material/
 !i_ciclo/material/02. variables y tipos de datos.md
+!i_ciclo/material/03. salida, entrada y manejo de errores.md
