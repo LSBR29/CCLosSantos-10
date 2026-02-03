@@ -3,10 +3,12 @@ ii_ciclo/*
 
 i_ciclo/exámenes/
 i_ciclo/tareas/
-i_ciclo/ejercicios/
-i_ciclo/material/*
+i_ciclo/ejercicios/*
 
 # Visibles
-!i_ciclo/material/
-!i_ciclo/material/02. variables y tipos de datos.md
-!i_ciclo/material/03. salida, entrada y manejo de errores.md
+!i_ciclo/ejercicios/
+!i_ciclo/ejercicios/ciclo_for/
+!i_ciclo/ejercicios/ciclo_while/
+!i_ciclo/ejercicios/estructuras_de_datos/
+!i_ciclo/ejercicios/funciones/
+!i_ciclo/ejercicios/otros/
