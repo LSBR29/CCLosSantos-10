@@ -1,9 +1,10 @@
-# Material no visto
-ii_ciclo/*
-
+# Material no visible
 i_ciclo/exámenes/
 i_ciclo/tareas/
 i_ciclo/ejercicios/*
+
+ii_ciclo/exámenes/
+ii_ciclo/tareas/
 
 # Visibles
 !i_ciclo/ejercicios/
