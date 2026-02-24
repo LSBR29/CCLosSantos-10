@@ -12,3 +12,9 @@ ii_ciclo/tareas/
 !i_ciclo/ejercicios/ciclo_while/
 !i_ciclo/ejercicios/estructuras_de_datos/
 !i_ciclo/ejercicios/funciones/
+!i_ciclo/ejercicios/otros/
+
+i_ciclo/ejercicios/otros/*
+!i_ciclo/ejercicios/otros/unir_nombre_apellido.py
+!i_ciclo/ejercicios/otros/promedio.py
+!i_ciclo/ejercicios/otros/calculadora_básica.py
