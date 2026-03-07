@@ -22,6 +22,9 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Funciones](i_ciclo/ejercicios/funciones/)
 - [Otros](i_ciclo/ejercicios/otros/)
 
+### Tareas
+- [Tarea 1](i_ciclo/tareas/1/)
+
 ## II Ciclo
 ### Material
 - [01 - Manejo de Archivos](ii_ciclo/material/01.%20manejo%20de%20archivos.md)
