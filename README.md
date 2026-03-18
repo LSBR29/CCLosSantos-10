@@ -23,7 +23,11 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Otros](i_ciclo/ejercicios/otros/)
 
 ### Tareas
+- [Tareas Anteriores](i_ciclo/tareas/anteriores)
 - [Tarea 1](i_ciclo/tareas/1/)
+
+### Exámenes
+- [Exámenes Anteriores](i_ciclo/examenes/anteriores)
 
 ## II Ciclo
 ### Material
