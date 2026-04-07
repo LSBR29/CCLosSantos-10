@@ -21,6 +21,7 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Estructuras de Datos](i_ciclo/ejercicios/estructuras_de_datos/)
 - [Funciones](i_ciclo/ejercicios/funciones/)
 - [Otros](i_ciclo/ejercicios/otros/)
+- [I Examen Recomendados](i_ciclo/ejercicios/i_examen_recomendados/)
 
 ### Tareas
 - [Tareas Anteriores](i_ciclo/tareas/anteriores/)
