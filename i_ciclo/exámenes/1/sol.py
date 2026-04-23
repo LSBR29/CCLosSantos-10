@@ -46,6 +46,9 @@ edades = [edad_1, edad_2, edad_3]
 # Se usa nombres[i][j], i es el índice en la lista de cada nombre
 # j se utiliza para extraer la primera letra (slicing)
 primeras_letras = [nombres[0][0], nombres[1][0], nombres[2][0]]
+"""Otra opción
+primeras_letras = [nombre1[0], nombre2[0], nombre3[0]]
+"""
 
 # Creación de la lista de paridades
 paridades = []
