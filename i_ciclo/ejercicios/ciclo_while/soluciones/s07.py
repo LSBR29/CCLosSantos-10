@@ -1,5 +1,3 @@
-# Caso sin strings
-
 num = ""          # Número para ingresar del input
 detenerse = False # Condición del while para solicitar el número
 
@@ -33,16 +31,15 @@ while num > 0:
 
 print(f"La suma de los dígitos es: {suma}")
 
-# Caso en que se usan strings
-string = str(num)
-
+"""OTRA FORMA
 suma = 0 # Almacenar suma total
 idx = 0  # Almacenar el índice del recorrido del string
 
 # Repetir mientras el índice sea menor que el largo del string
-while idx < len(string):
-    suma += int(string[idx]) # Sumar cada dígito
+while idx < len(num):
+    suma += int(num[idx]) # Sumar cada dígito
 
     idx += 1 # Aumentar el índice para seguir el recorrido
 
 print(f"La suma de los dígitos es: {suma}")
+"""
