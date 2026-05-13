@@ -1,7 +1,7 @@
 # Ejercicios ciclo `for`
 ### Ejercicio 1: Contar vocales en una palabra
 
-Escribe un programa que reciba una palabra y cuente cuántas vocales (`a, e, i, o, u`) tiene.  
+Escriba un programa que reciba una palabra y que cuente cuántas vocales (`a, e, i, o, u`) tiene.  
 
 **Ejemplo:**  
 ```plaintext
@@ -14,7 +14,7 @@ Salida: 1
 
 ### Ejercicio 2: Filtrar palabras cortas
 
-Dada una lista de palabras, devuelve una nueva lista que contenga solo aquellas palabras con más de 4 letras.  
+Dada una lista de palabras, imprima una nueva lista que contenga solo aquellas palabras con más de 4 letras.  
 
 **Ejemplo:**  
 ```plaintext
@@ -24,7 +24,7 @@ Salida: ["estrella", "universo"]
 
 ### Ejercicio 3: Encontrar la palabra más larga en una lista  
 
-Dada una lista de palabras, devuelve la palabra con más caracteres. Si hay más de una con la misma longitud, devuelve la primera que aparece.  
+Dada una lista de palabras, imprima la palabra con más caracteres. Si hay más de una con la misma longitud, que imprima la primera que aparece.  
 
 **Ejemplo:**  
 ```plaintext
@@ -34,7 +34,7 @@ Salida: "elefante"
 
 ### Ejercicio 4: Contar palabras que contienen una letra específica  
 
-Dada una lista de palabras y una letra, cuenta cuántas palabras contienen esa letra.  
+Dada una lista de palabras y una letra, que cuente cuántas palabras contienen esa letra.  
 
 **Ejemplo:**  
 ```plaintext
@@ -45,7 +45,7 @@ Salida: 2
 
 ### Ejercicio 5: Convertir palabras a mayúsculas si tienen más de 5 letras  
 
-Dada una lista de palabras, devuelve una nueva lista donde las palabras con más de 5 letras estén en mayúsculas y las demás queden igual.  
+Dada una lista de palabras, imprima una nueva lista donde las palabras con más de 5 letras estén en mayúsculas y las demás queden igual.  
 
 **Ejemplo:**  
 ```plaintext
@@ -55,7 +55,7 @@ Salida: ["hola", "ELEFANTE", "mundo", "ESTRELLA"]
 
 ### Ejercicio 6: Reemplazar vocales en una palabra  
 
-Escribe un programa que reemplace todas las vocales de una palabra por un asterisco `*`.  
+Escriba un programa que reemplace todas las vocales de una palabra por un asterisco `*`.  
 
 **Ejemplo:**  
 ```plaintext
@@ -65,7 +65,7 @@ Salida: "pr*gr*m*c**n"
 
 ### Ejercicio 7: Eliminar palabras repetidas de una lista  
 
-Dada una lista de palabras, devuelve una nueva lista con las palabras sin repetir, conservando el orden original.  
+Dada una lista de palabras, imprima una nueva lista con las palabras sin repetir, conservando el orden original.  
 
 **Ejemplo:**  
 ```plaintext
@@ -75,7 +75,7 @@ Salida: ["manzana", "pera", "uva"]
 
 ### Ejercicio 8: Determinar si una lista está ordenada  
 
-Escribe un programa que reciba una lista de números y determine si está ordenada de menor a mayor.  
+Escriba un programa que reciba una lista de números y que determine si está ordenada de menor a mayor.  
 
 **Ejemplo:**  
 ```plaintext
@@ -88,7 +88,7 @@ Salida: False
 
 ### Ejercicio 9: Concatenar todas las palabras de una lista  
 
-Dada una lista de palabras, devuelve un solo string donde todas las palabras estén separadas por un espacio (sin utilizar el método `join()`)
+Dada una lista de palabras, imprima un solo string donde todas las palabras estén separadas por un espacio (sin utilizar el método `join()`)
 
 **Ejemplo:**  
 ```plaintext
@@ -98,7 +98,7 @@ Salida: "Hola mundo esto es Python"
 
 ### Ejercicio 10: Contar números pares e impares en una lista  
 
-Dada una lista de números enteros, cuenta cuántos son pares y cuántos son impares.  
+Dada una lista de números enteros, que cuente cuántos son pares y cuántos son impares.  
 
 **Ejemplo:**  
 ```plaintext
@@ -108,7 +108,7 @@ Salida: "Pares: 3, Impares: 3"
 
 ### Ejercicio 11: Contar letras en una lista de palabras  
 
-Dada una lista de palabras, devuelve una nueva lista con la cantidad de letras que tiene cada palabra.  
+Dada una lista de palabras, imprima una nueva lista con la cantidad de letras que tiene cada palabra.  
 
 **Ejemplo:**  
 ```plaintext
@@ -118,7 +118,7 @@ Salida: [4, 8, 3]
 
 ### Ejercicio 12: Palabras que terminan con una letra específica  
 
-Dada una lista de palabras y una letra, devuelve una lista con las palabras que terminan con esa letra.  
+Dada una lista de palabras y una letra, imprima una lista con las palabras que terminan con esa letra.  
 
 **Ejemplo:**  
 ```plaintext
@@ -129,7 +129,7 @@ Salida: ["coral", "animal"]
 
 ### Ejercicio 13: Contar cuántas veces aparece una letra en cada palabra  
 
-Dada una lista de palabras y una letra, crea una nueva lista con la cantidad de veces que esa letra aparece en cada palabra.  
+Dada una lista de palabras y una letra, que cree una nueva lista con la cantidad de veces que esa letra aparece en cada palabra.  
 
 **Ejemplo:**  
 ```plaintext
@@ -140,7 +140,7 @@ Salida: [3, 3, 1]
 
 ### Ejercicio 14: Buscar palabras con letras repetidas (for anidado)  
 
-Dada una lista de palabras, devuelve una lista con las palabras que tienen alguna letra repetida.  
+Dada una lista de palabras, imprima una lista con las palabras que tienen alguna letra repetida.  
 
 **Ejemplo:**  
 ```plaintext
@@ -150,7 +150,7 @@ Salida: ["taza", "elefante"]
 
 ### Ejercicio 15: Mostrar letras comunes entre pares de palabras (for anidado)  
 
-Dada una lista de dos palabras, muestra las letras que tienen en común (sin repetir letras).  
+Dada una lista de dos palabras, que muestre las letras que tienen en común (sin repetir letras).  
 
 **Ejemplo:**  
 ```plaintext
@@ -160,7 +160,7 @@ Salida: ['e', 'n']
 
 ### Ejercicio 16: Contar cuántas palabras contienen al menos una vocal  
 
-Dada una lista de palabras, cuenta cuántas contienen al menos una vocal.  
+Dada una lista de palabras, que cuente cuántas contienen al menos una vocal.  
 
 **Ejemplo:**  
 ```plaintext
