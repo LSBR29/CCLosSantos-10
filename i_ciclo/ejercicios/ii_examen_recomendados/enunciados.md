@@ -31,7 +31,21 @@ Debe implementar las siguientes funciones:
 * `calcular_porcentaje(correctos, total)`
 
 **Ejemplo de ejecución:**
+```text
+Ingrese la contraseña para 'ana': python123
+Acceso exitoso para 'ana'.
+Ingrese la contraseña para 'carlos': holaaaaaa
+Acceso fallido para 'carlos'. Contraseña incorrecta.
+Ingrese la contraseña para 'maria': 123456
+Acceso fallido para 'maria'. Contraseña incorrecta.
+Ingrese la contraseña para 'luis': abc123
+Acceso exitoso para 'luis'.
 
+RESUMEN
+Accesos correctos: 2
+Accesos incorrectos: 2
+Porcentaje de accesos correctos: 50.0%
+```
 
 ---
 
@@ -68,7 +82,37 @@ Debe implementar las siguientes funciones:
 * `actualizar_inventario(inventario, producto, cantidad)`
 
 **Ejemplo de ejecución:**
+```text
+Inventario inicial
+Teclado: 5 unidades
+Mouse: 8 unidades
+Monitor: 3 unidades
+Audifonos: 6 unidades
 
+Producto: Teclado (Disponible: 5)
+¿Cuántas unidades de Teclado desea comprar? 2
+Compra exitosa. Se vendieron 2 unidades de 'Teclado'.
+
+Producto: Mouse (Disponible: 8)
+¿Cuántas unidades de Mouse desea comprar? 10
+Inventario insuficiente. Solo hay 8 unidades disponibles.
+
+Producto: Monitor (Disponible: 3)
+¿Cuántas unidades de Monitor desea comprar? 3
+Compra exitosa. Se vendieron 3 unidades de 'Monitor'.
+
+Producto: Audifonos (Disponible: 6)
+¿Cuántas unidades de Audifonos desea comprar? 9
+Inventario insuficiente. Solo hay 6 unidades disponibles.
+
+Inventario final
+Teclado: 3 unidades
+Mouse: 8 unidades
+Monitor: 0 unidades
+Audifonos: 6 unidades
+
+Total de productos vendidos: 5 unidades
+```
 
 ---
 
@@ -103,7 +147,16 @@ Debe implementar las siguientes funciones:
 * `aprobo(promedio)`
 
 **Ejemplo de ejecución:**
+```text
+Ana aprueba con un promedio de 87.67
+Carlos reprueba con un promedio de 65.00
+Maria aprueba con un promedio de 97.67
+Luis aprueba con un promedio de 79.00
 
+Resumen
+Estudiantes aprobados: 3
+Estudiantes reprobados: 
+```
 
 ---
 
