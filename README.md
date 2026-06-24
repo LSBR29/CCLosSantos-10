@@ -22,10 +22,12 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Funciones](i_ciclo/ejercicios/funciones/)
 - [Otros](i_ciclo/ejercicios/otros/)
 - [I Examen Recomendados](i_ciclo/ejercicios/i_examen_recomendados/)
+- [II Examen Recomendados](i_ciclo/ejercicios/ii_examen_recomendados/)
 
 ### Tareas
 - [Tareas Anteriores](i_ciclo/tareas/anteriores/)
 - [Tarea 1](i_ciclo/tareas/1/)
+- [Tarea 1](i_ciclo/tareas/2/)
 
 ### Exámenes
 - [I Examen](i_ciclo/exámenes/1)
