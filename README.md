@@ -27,10 +27,11 @@ Curso de Programación 10º Colegio Científico de los Santos
 ### Tareas
 - [Tareas Anteriores](i_ciclo/tareas/anteriores/)
 - [Tarea 1](i_ciclo/tareas/1/)
-- [Tarea 1](i_ciclo/tareas/2/)
+- [Tarea 2](i_ciclo/tareas/2/)
 
 ### Exámenes
 - [I Examen](i_ciclo/exámenes/1)
+- [II Examen](i_ciclo/exámenes/2)
 - [Exámenes Anteriores](i_ciclo/exámenes/anteriores/)
 
 ## II Ciclo
