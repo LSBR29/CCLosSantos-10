@@ -30,9 +30,9 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Tarea 2](i_ciclo/tareas/2/)
 
 ### Exámenes
+- [Exámenes Anteriores](i_ciclo/exámenes/anteriores/)
 - [I Examen](i_ciclo/exámenes/1)
 - [II Examen](i_ciclo/exámenes/2)
-- [Exámenes Anteriores](i_ciclo/exámenes/anteriores/)
 
 ## II Ciclo
 ### Material
@@ -54,3 +54,9 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Ejercicios POO](ii_ciclo/ejercicios/ejercicios_POO/)
 - [Métodos y Encapsulamiento](ii_ciclo/ejercicios/métodos_y_encapsulamiento/)
 - [Programación Funcional](ii_ciclo/ejercicios/programación_funcional/)
+
+### Tareas
+- [Tareas Anteriores](ii_ciclo/tareas/anteriores/)
+
+### Exámenes
+- [Exámenes Anteriores](ii_ciclo/exámenes/anteriores/)
