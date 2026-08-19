@@ -13,7 +13,7 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [08 - Ciclo for](i_ciclo/material/08.%20ciclo%20for.md)
 - [09 - Ciclo while](i_ciclo/material/09.%20ciclo%20while.md)
 - [10 - Estructuras de Datos](i_ciclo/material/10.%20estructuras%20de%20datos.md)
-- [11 - Funciones](i_ciclo/material/11.%20funciones.md)
+- [11 - Funciones (y recursividad)](i_ciclo/material/11.%20funciones.md)
 
 ### Ejercicios
 - [Ciclo for](i_ciclo/ejercicios/ciclo_for/)
