@@ -40,16 +40,19 @@ Un número perfecto es aquel cuya suma de sus factores propios es igual al núme
 Determine la complejidad temporal del siguiente algortimo:
 ```python
 def esPerfecto(n):
+    if n < 2:
+        return False
     s = 1
     i = 2
-    while i * i < n:
+
+    while i * i <= n:
         if n % i == 0:
-            s += i + n // i
-        i += 1
-        i += 1
-        if i * i == n:
             s += i
-            s += i
+            if i != n // i:
+                s += n // i
+
+        i += 1
+
     return s == n
 ```
 
