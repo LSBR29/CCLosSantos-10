@@ -105,7 +105,7 @@ Además, se crea una nueva matriz `C` del mismo tamaño que A y B, ocupando O(n�
 ---
 
 ### 5.
-Determine la complejidad temporal y espacial del siguiente algortimo:
+Determine la complejidad temporal del siguiente algortimo:
 ```python
 def buscar_en_matriz(matriz, objetivo):
     for fila in matriz:
@@ -115,12 +115,11 @@ def buscar_en_matriz(matriz, objetivo):
 ```
 Se puede suponer que la matriz es de tamaño `n × n`.
 
-**Respuesta:** Temporal O(n²), Espacial O(1)
+**Respuesta:** Temporal O(n²)
 
 **Explicación:**
 
 El peor caso es cuando el `objetivo` no está en la matriz, por lo que se revisan todas las filas. La operación `if objetivo in fila` cuesta O(n), y hay `n` filas → O(n²).
-En cuanto a memoria, no se crean estructuras adicionales; se usan los parámetros pasados a la función → O(1).
 
 ---
 
@@ -192,3 +191,136 @@ def constante(n):
 **Explicación:**
 
 Sin importar el valor de `n`, no se crean nuevas variables que ocupen un espacio. La complejidad espacial es constante.
+
+---
+
+### 10.
+Un algoritmo recibe un número entero `n` y devuelve `True` si es par y `False` si es impar. Para ello, simplemente calcula el residuo de la división entre 2 y compara con 0.
+
+**Respuesta:** O(1)
+
+**Explicación:**
+El tiempo de ejecución es constante, independientemente del valor de `n`. No hay bucles ni llamadas recursivas; solo se ejecuta un número fijo de instrucciones.
+
+---
+
+### 11.
+Un algoritmo recibe una lista de números y calcula el promedio de todos sus elementos. Para ello, recorre la lista una sola vez sumando cada elemento y, al final, divide la suma total entre la cantidad de elementos.
+
+**Respuesta:** O(n)
+
+**Explicación:**
+El algoritmo debe visitar cada elemento de la lista exactamente una vez para realizar la suma. Si la lista tiene `n` elementos, el número de operaciones crece linealmente con `n`.
+
+---
+
+### 12.
+Un algoritmo recibe dos listas de números de igual longitud `n` y devuelve una nueva lista donde cada posición `i` contiene la suma de los elementos de ambas listas en esa posición. Para ello, recorre ambas listas simultáneamente con un solo bucle que va desde `0` hasta `n-1`.
+
+**Respuesta:** O(n)
+
+**Explicación:**
+Aunque hay dos listas de entrada, el bucle se ejecuta `n` veces (una por cada índice). En cada iteración se realizan operaciones de tiempo constante, por lo que la complejidad temporal es lineal respecto al tamaño de las listas.
+
+---
+
+### 15.
+Un algoritmo recibe una lista ordenada de números y un valor objetivo. Para encontrar la posición del objetivo, utiliza la técnica de búsqueda binaria: compara el objetivo con el elemento central de la lista; si son iguales, termina; si el objetivo es menor, repite el proceso en la mitad izquierda; si es mayor, en la mitad derecha. En cada paso, el tamaño del problema se reduce a la mitad.
+
+**Respuesta:** O(log n)
+
+**Explicación:**
+Cada iteración divide el tamaño de la lista a la mitad. El número de iteraciones necesarias para reducir la lista a un solo elemento es `log₂(n)`. Por lo tanto, la complejidad temporal es logarítmica respecto a `n`.
+
+¡Perfecto! Aquí tienes **6 nuevos ejercicios con código** (al estilo de los primeros 9 del archivo). Cubren todas las complejidades que pediste: O(1), O(n), O(n²), O(n³), O(2ⁿ) y O(log n). Son diferentes a los que ya existen y mantienen el mismo formato de redacción.
+
+Puedes añadirlos al final de tu archivo `enunciados.md`:
+
+---
+
+### 16.
+Determine la complejidad temporal del siguiente algoritmo:
+```python
+def acceso(lista):
+    if len(lista) > 0:
+        return lista[0] + lista[-1]
+    return 0
+```
+
+**Respuesta:** O(1)
+
+**Explicación:**
+El algoritmo siempre accede únicamente a la primera y última posición de la lista, sin importar cuántos elementos tenga. No hay bucles ni recursión; las operaciones son de tiempo constante.
+
+---
+
+### 17.
+Determine la complejidad temporal del siguiente algoritmo:
+```python
+def maximo_lista(lista):
+    max_val = lista[0]
+    for num in lista:
+        if num > max_val:
+            max_val = num
+    return max_val
+```
+
+**Respuesta:** O(n)
+
+**Explicación:**
+El bucle `for` recorre cada uno de los `n` elementos de la lista exactamente una vez, realizando una comparación por cada elemento. Por lo tanto, el tiempo de ejecución crece de forma lineal con el tamaño de la entrada.
+
+---
+
+### 18.
+Determine la complejidad temporal del siguiente algoritmo:
+```python
+def contar_pares_con_suma(lista, objetivo):
+    contador = 0
+    for i in range(len(lista)):
+        for j in range(i + 1, len(lista)):
+            if lista[i] + lista[j] == objetivo:
+                contador += 1
+    return contador
+```
+
+**Respuesta:** O(n²)
+
+**Explicación:**
+El algoritmo utiliza dos bucles anidados. El bucle externo recorre `n` elementos y el interno, en promedio, recorre `n/2` elementos. Al estar anidados, el número total de iteraciones es proporcional a `n × n = n²`.
+
+---
+
+### 19.
+Determine la complejidad temporal del siguiente algoritmo:
+```python
+def existe_triplete_suma_cero(lista):
+    n = len(lista)
+    for i in range(n):
+        for j in range(i + 1, n):
+            for k in range(j + 1, n):
+                if lista[i] + lista[j] + lista[k] == 0:
+                    return True
+    return False
+```
+
+**Respuesta:** O(n³)
+
+**Explicación:**
+Hay tres bucles anidados, cada uno dependiente del tamaño `n` de la lista. El número de combinaciones de tripletes que se evalúan es del orden de `n × n × n = n³`, por lo que la complejidad temporal es cúbica.
+
+---
+
+### 20.
+Determine la complejidad temporal del siguiente algoritmo:
+```python
+def fibonacc(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+```
+
+**Respuesta:** O(2ⁿ)
+
+**Explicación:**
+Cada llamada a la función genera dos llamadas recursivas adicionales, formando un árbol binario de altura `n`. El número total de llamadas crece exponencialmente, aproximadamente `2ⁿ`. Por esta razón, el algoritmo es extremadamente ineficiente para valores grandes de `n`.
