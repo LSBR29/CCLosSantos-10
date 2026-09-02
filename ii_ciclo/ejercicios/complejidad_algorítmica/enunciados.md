@@ -207,21 +207,6 @@ El tiempo de ejecución es constante, independientemente del valor de `n`. No ha
 ### 11.
 Un algoritmo recibe una lista de números y calcula el promedio de todos sus elementos. Para ello, recorre la lista una sola vez sumando cada elemento y, al final, divide la suma total entre la cantidad de elementos.
 
-¿Complejidad Temporal?
-
-Recibe lista -> O(n)
-Recorre la lista -> O(n)
-Suma cada elemento -> O(1)
-Divide la suma entre cantidad -> O(1)
-                O(n + n + 1 + 1) = O(2n + 2) = O(2n) = O(n)
-
-
-
-
-
-
-
-
 **Respuesta:** O(n)
 
 **Explicación:**
