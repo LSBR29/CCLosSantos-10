@@ -207,6 +207,21 @@ El tiempo de ejecución es constante, independientemente del valor de `n`. No ha
 ### 11.
 Un algoritmo recibe una lista de números y calcula el promedio de todos sus elementos. Para ello, recorre la lista una sola vez sumando cada elemento y, al final, divide la suma total entre la cantidad de elementos.
 
+¿Complejidad Temporal?
+
+Recibe lista -> O(n)
+Recorre la lista -> O(n)
+Suma cada elemento -> O(1)
+Divide la suma entre cantidad -> O(1)
+                O(n + n + 1 + 1) = O(2n + 2) = O(2n) = O(n)
+
+
+
+
+
+
+
+
 **Respuesta:** O(n)
 
 **Explicación:**
@@ -231,10 +246,6 @@ Un algoritmo recibe una lista ordenada de números y un valor objetivo. Para enc
 
 **Explicación:**
 Cada iteración divide el tamaño de la lista a la mitad. El número de iteraciones necesarias para reducir la lista a un solo elemento es `log₂(n)`. Por lo tanto, la complejidad temporal es logarítmica respecto a `n`.
-
-¡Perfecto! Aquí tienes **6 nuevos ejercicios con código** (al estilo de los primeros 9 del archivo). Cubren todas las complejidades que pediste: O(1), O(n), O(n²), O(n³), O(2ⁿ) y O(log n). Son diferentes a los que ya existen y mantienen el mismo formato de redacción.
-
-Puedes añadirlos al final de tu archivo `enunciados.md`:
 
 ---
 
