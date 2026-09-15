@@ -50,6 +50,7 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Manejo de Archivos](ii_ciclo/ejercicios/manejo_de_archivos/)
 - [Múltiples Archivos](ii_ciclo/ejercicios/múltiples_archivos/)
 - [Complejidad Algorítmica](ii_ciclo/ejercicios/complejidad_algorítmica/)
+- [Estrategias para Resolver Problemas con Algoritmos](ii_ciclo/ejercicios/resolución_de_problemas/)
 - [Algoritmos sobre Números](ii_ciclo/ejercicios/algoritmos_sobre_números/)
 - [Ejercicios POO](ii_ciclo/ejercicios/ejercicios_POO/)
 - [Métodos y Encapsulamiento](ii_ciclo/ejercicios/métodos_y_encapsulamiento/)
