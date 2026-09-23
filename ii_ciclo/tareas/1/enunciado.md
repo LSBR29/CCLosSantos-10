@@ -105,7 +105,7 @@ La función `leer_diario()` debe utilizarse para obtener las líneas del archivo
 
 ## Criterios de Evaluación
 
-* **Lectura y escritura correcta del archivo:** 25%
+* **Lectura y escritura correcta del archivo:** 20%
 * **Uso de múltiples archivos (`main.py`, `diario_utils.py`):** 10%
 * **Uso de `try-except` para errores de archivo:** 10%
 * **Generación automática de la fecha con `date.today()`:** 15%
