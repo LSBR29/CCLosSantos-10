@@ -55,6 +55,7 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Ejercicios POO](ii_ciclo/ejercicios/ejercicios_POO/)
 - [Métodos y Encapsulamiento](ii_ciclo/ejercicios/métodos_y_encapsulamiento/)
 - [Programación Funcional](ii_ciclo/ejercicios/programación_funcional/)
+- [I Examen Recomendados](ii_ciclo/ejercicios/i_examen_recomendados/)
 
 ### Tareas
 - [Tareas Anteriores](ii_ciclo/tareas/anteriores/)
