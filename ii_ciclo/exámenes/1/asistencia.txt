@@ -1,0 +1,5 @@
+Ana,presente
+Luis,ausente
+Ana,ausente
+Carla,presente
+Luis,ausente
