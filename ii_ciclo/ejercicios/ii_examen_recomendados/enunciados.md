@@ -2,15 +2,16 @@
 
 ### 1. Clase `Planta`
 
-Crear una clase `Planta` que lleve el control de la altura de una planta en un jardín.
+Crear una clase `Planta` que lleve el control de la altura y del riego de una planta en un jardín.
 
 **Requisitos**
 
-* Atributos `nombre` (str) y `altura` (int, en cm). La altura empieza en `10` y no se recibe como parámetro.
-* `regar()` aumenta la altura en `2` cm.
+* Atributos `nombre` (str), `altura` (int, en cm) y `dias_sin_agua` (int). La altura empieza en `10` y los días sin agua en `0`; ninguno de los dos se recibe como parámetro.
+* `regar()` reinicia `dias_sin_agua` a `0` y aumenta la altura en `2` cm.
+* `pasar_dia()` suma un día a `dias_sin_agua`.
+* `necesita_agua()` devuelve `True` si la planta lleva 3 días o más sin agua, si no devuelve `False`.
 * `necesita_poda()` devuelve `True` si la altura es mayor que `20`, si no devuelve `False`.
-* `mostrar_info()` devuelve un `str` con el formato `<nombre> | Altura <altura> cm`.
-
+* `mostrar_info()` devuelve un `str` con el formato `<nombre> | Altura <altura> cm | Días sin agua <dias_sin_agua>`.
 **Ejemplo de ejecución**
 
 ```python
@@ -20,21 +21,31 @@ if __name__ == "__main__":
 
     for _ in range(6):
         albahaca.regar()
-    menta.regar()
-    menta.regar()
+    for _ in range(3):
+        menta.pasar_dia()
 
     print(albahaca.mostrar_info())
     print(menta.mostrar_info())
     print(albahaca.necesita_poda())
     print(menta.necesita_poda())
+    print(albahaca.necesita_agua())
+    print(menta.necesita_agua())
+
+    menta.regar()
+    print(menta.mostrar_info())
+    print(menta.necesita_agua())
 ```
 
 **Salida esperada**
 
 ```
-Albahaca | Altura 22 cm
-Menta | Altura 14 cm
+Albahaca | Altura 22 cm | Días sin agua 0
+Menta | Altura 10 cm | Días sin agua 3
 True
+False
+False
+True
+Menta | Altura 12 cm | Días sin agua 0
 False
 ```
 
