@@ -12,6 +12,7 @@ Crear una clase `Planta` que lleve el control de la altura y del riego de una pl
 * `necesita_agua()` devuelve `True` si la planta lleva 3 días o más sin agua, si no devuelve `False`.
 * `necesita_poda()` devuelve `True` si la altura es mayor que `20`, si no devuelve `False`.
 * `mostrar_info()` devuelve un `str` con el formato `<nombre> | Altura <altura> cm | Días sin agua <dias_sin_agua>`.
+
 **Ejemplo de ejecución**
 
 ```python
@@ -213,7 +214,6 @@ if __name__ == "__main__":
     nautilus = RobotAnfibio("Nautilus")
 
     print(halcon.volar())
-    print(hasattr(halcon, "nadar"))
 
     print(nautilus.volar())
     print(nautilus.nadar())
@@ -224,9 +224,6 @@ if __name__ == "__main__":
         nautilus.mover()
     print(nautilus.bateria)
     print(nautilus.mover())
-
-    for clase in RobotAnfibio.__mro__:
-        print(clase.__name__)
 
     try:
         nautilus.bateria = 50
