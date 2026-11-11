@@ -51,13 +51,14 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [Complejidad Algorítmica](ii_ciclo/ejercicios/complejidad_algorítmica/)
 - [Estrategias para Resolver Problemas con Algoritmos](ii_ciclo/ejercicios/resolución_de_problemas/)
 - [Ejercicios POO](ii_ciclo/ejercicios/ejercicios_POO/)
-- [Métodos y Encapsulamiento](ii_ciclo/ejercicios/métodos_y_encapsulamiento/)
-- [Programación Funcional](ii_ciclo/ejercicios/programación_funcional/)
+- [Métodos y Encapsulamiento](ii_ciclo/ejercicios/ejercicios_POO/métodos_y_encapsulamiento/)
 - [I Examen Recomendados](ii_ciclo/ejercicios/i_examen_recomendados/)
+- [II Examen Recomendados](ii_ciclo/ejercicios/ii_examen_recomendados/)
 
 ### Tareas
 - [Tareas Anteriores](ii_ciclo/tareas/anteriores/)
 - [Tarea 1](ii_ciclo/tareas/1/)
+- [Tarea 2](ii_ciclo/tareas/2/)
 
 ### Exámenes
 - [I Examen](ii_ciclo/exámenes/1)
