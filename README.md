@@ -43,7 +43,6 @@ Curso de Programación 10º Colegio Científico de los Santos
 - [05 - Introducción a la POO](ii_ciclo/material/06.%20introducción%20a%20la%20poo.md)
 - [06 - Métodos y Encapsulamiento](ii_ciclo/material/07.%20métodos%20y%20encapsulamiento.md)
 - [07 - Herencia](ii_ciclo/material/08.%20herencia.md)
-- [08 - Programación Funcional]()
 
 ### Ejercicios
 - [Manejo de Archivos](ii_ciclo/ejercicios/manejo_de_archivos/)
