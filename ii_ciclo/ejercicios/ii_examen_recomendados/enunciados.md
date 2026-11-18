@@ -249,3 +249,52 @@ NadadorMixin
 object
 La batería es de solo lectura
 ```
+
+### 6. Registro de avistamientos de aves
+
+Un grupo de observadores participa en un concurso dentro de una reserva. Cada vez que alguien ve aves de una especie, anota el código de la especie y cuántas aves vio, y al final se calcula un puntaje. Las especies difíciles de ver valen más que las comunes, así que el sistema debe tratar cada tipo de especie con su propia regla de puntos.
+
+Se deben crear las clases `Especie`, `Reserva`, `EspecieRara` y `EspecieEndemica`, que guarden las especies de la reserva, registren los avistamientos y calculen el puntaje total del concurso.
+
+**Puntos por ave**
+
+| Tipo de especie | Puntos por cada ave vista |
+| :---: | :---: |
+| Común | 1 |
+| Rara | 5 |
+| Endémica | 10 |
+
+Por ejemplo, si de una especie rara se ven 2 aves, el puntaje de esa especie es `10`.
+
+**Requisitos**
+
+*Clase `Especie` (especie común)*
+
+* Atributos `codigo` (str) y `nombre` (str), y atributo privado `__avistamientos` (int), que empieza en `0`.
+* El constructor recibe `codigo` y `nombre`.
+* Propiedad `avistamientos` de solo lectura (sin `setter`). Devuelve `__avistamientos`.
+* `registrar(cantidad)` si `cantidad` es mayor que `0`, la suma a `__avistamientos` y devuelve `True`. Si no, no cambia nada y devuelve `False`.
+* `puntos_por_ave()` devuelve `1`. En las clases hijas se redefine.
+* `puntaje()` devuelve la cantidad de aves vistas multiplicada por los puntos por ave.
+* `__str__` devuelve `<nombre> (<codigo>) | Aves <avistamientos> | Puntos <puntaje>`.
+
+*Clase `Reserva`*
+
+* Atributo `nombre` (str) y atributo `especies` (dict), que empieza vacío. La llave es el código de la especie y el valor es el objeto de la especie.
+* El constructor recibe `nombre`.
+* `agregar_especie(especie)` guarda la especie en el diccionario usando su código como llave.
+* `registrar_avistamiento(codigo, cantidad)` si el código existe en el diccionario, registra la cantidad en esa especie y devuelve lo que devuelva `registrar()`. Si el código no existe, devuelve `False`.
+* `puntaje_total()` devuelve la suma de los puntajes de todas las especies.
+* `sin_avistamientos()` devuelve una `list` con los nombres de las especies que todavía tienen `0` aves vistas.
+
+*Clase `EspecieRara`*
+
+* Hereda de `Especie`
+* Sobreescribe `puntos_por_ave()` para que cada ave valga `5`.
+* Sobreescribe `__str__` para agregar ` | Rara`.
+
+*Clase `EspecieEndemica`*
+
+* Hereda de `Especie` y agrega el atributo `region` (str), la región donde vive la especie. Su constructor recibe `codigo`, `nombre` y `region`.
+* Sobreescribe `puntos_por_ave()` para que cada ave valga `10`.
+* Sobreescribe `__str__` para agregar ` | Endémica de <region>`.
