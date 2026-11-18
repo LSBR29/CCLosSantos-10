@@ -274,18 +274,21 @@ Por ejemplo, si de una especie rara se ven 2 aves, el puntaje de esa especie es 
 * El constructor recibe `codigo` y `nombre`.
 * Propiedad `avistamientos` de solo lectura (sin `setter`). Devuelve `__avistamientos`.
 * `registrar(cantidad)` si `cantidad` es mayor que `0`, la suma a `__avistamientos` y devuelve `True`. Si no, no cambia nada y devuelve `False`.
-* `puntos_por_ave()` devuelve `1`. En las clases hijas se redefine.
+* `puntos_por_ave()` devuelve `1`. Las clases hijas lo van a redefinir.
 * `puntaje()` devuelve la cantidad de aves vistas multiplicada por los puntos por ave.
+* `__lt__(other)` compara dos especies por su puntaje. Debe funcionar igual para cualquier tipo de especie.
 * `__str__` devuelve `<nombre> (<codigo>) | Aves <avistamientos> | Puntos <puntaje>`.
 
 *Clase `Reserva`*
 
-* Atributo `nombre` (str) y atributo `especies` (dict), que empieza vacío. La llave es el código de la especie y el valor es el objeto de la especie.
-* El constructor recibe `nombre`.
+* Atributo `nombre` (str), `meta` (int) y atributo `especies` (dict), que empieza vacío. La llave es el código de la especie y el valor es el objeto de la especie.
+* El constructor recibe `nombre` y `meta`.
 * `agregar_especie(especie)` guarda la especie en el diccionario usando su código como llave.
 * `registrar_avistamiento(codigo, cantidad)` si el código existe en el diccionario, registra la cantidad en esa especie y devuelve lo que devuelva `registrar()`. Si el código no existe, devuelve `False`.
 * `puntaje_total()` devuelve la suma de los puntajes de todas las especies.
 * `sin_avistamientos()` devuelve una `list` con los nombres de las especies que todavía tienen `0` aves vistas.
+* `meta_alcanzada()` devuelve `True` si el puntaje total es mayor o igual que la meta, si no devuelve `False`.
+* `especie_destacada()` devuelve el objeto de la especie con mayor puntaje, comparando con `<`. Si hay empate se queda la primera que aparezca, y si la reserva no tiene especies devuelve `None`.
 
 *Clase `EspecieRara`*
 
